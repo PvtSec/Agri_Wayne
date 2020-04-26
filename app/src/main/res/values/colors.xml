@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#00B980</color>
+    <color name="colorAccent">#000</color>
+
+    <color name="grad_end">#00B980</color>
+    <color name="grad_start">#007C46</color>
+    <color name="tab_text">#007A45</color>
+    <color name="grid_border">#66E1E1E1</color>
+
+    <color name="good">#07B900</color>
+    <color name="normal">#0089D3</color>
+    <color name="bad">#B90000</color>
+</resources>

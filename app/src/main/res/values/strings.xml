@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Agri Wayne</string>
+    <string name="sample_date">Friday, March 27, 2020</string>
+    <string name="today_weather">Today</string>
+    <string name="tomorrow_weather">Tomorrow</string>
+    <string name="week_weather">Next Week</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sample_weather_text">Light Rain, Cloudy in the Evening</string>
+    <string name="temperature">Temperature</string>
+    <string name="rainfall">Rainfall</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind Speed</string>
+    <string name="good_condition">Good Condition for</string>
+    <string name="sample_crops">Rice, Wheat, Potato, Coffee, Ginger</string>
+    <string name="normal_condition">Normal Condition for</string>
+    <string name="sample_crops1">Ragi, Corn, Grapes</string>
+    <string name="bad_condition">Bad Condition for</string>
+    <string name="sample_crops2">Banana, Mango, Tomato</string>
+    <string name="advisory_title">Crop Advisory</string>
+
+    <string name="good_title">Good Condition</string>
+    <string name="normal_title">Normal Condition</string>
+    <string name="bad_title">Bad Condition</string>
+    <string name="change_lang">Change Language</string>
+    <string name="About">About</string>
+    <string name="watering">Watering</string>
+    <string name="fertilizers">Fertilizers</string>
+    <string name="pesticides">Pesticides</string>
+</resources>
