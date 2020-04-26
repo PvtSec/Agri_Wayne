@@ -15,8 +15,9 @@
         android:usesCleartextTraffic="true">
 
         <activity android:name=".Advisory"/>
-        <activity android:name=".Dashboard" />
-        <activity android:name=".SettingUp">
+        <activity android:name=".Dashboard"/>
+        <activity android:name=".SettingUp"/>
+        <activity android:name=".IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
