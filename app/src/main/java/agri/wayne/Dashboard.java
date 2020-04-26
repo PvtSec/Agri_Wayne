@@ -2,7 +2,6 @@ package agri.wayne;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -57,11 +56,7 @@ public class Dashboard extends AppCompatActivity
                 popupMenu.show();
             }
         });
+
     }
-
-
-
-
-
 
 }

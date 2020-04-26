@@ -1,15 +1,22 @@
 package agri.wayne;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.RemoteViews;
 import android.widget.Toast;
 import java.util.Objects;
 import agri.wayne.ServerHandler.ServerCommunication;
@@ -17,6 +24,7 @@ import agri.wayne.ServerHandler.ServerCommunication;
 public class Splash extends AppCompatActivity
 {
     ProgressBar splash_spin;
+    Button notify;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -40,7 +48,6 @@ public class Splash extends AppCompatActivity
             Toast.makeText(getApplicationContext(), "Check your Internet Connectivity", Toast.LENGTH_SHORT).show();
         }
     }
-
     private void launchNext(int ms)
     {
         new CountDownTimer(ms, 100)
