@@ -23,8 +23,8 @@
 - The api requests are made to a php script hosted online. Change the link in the file:
 `java > agri.wayne > ServerHandler > ServerCommunication.java`
 edit the line 37 to point to another php script
-- php is not necessary, but the api response should be always json
-Required format of api response:
+- PHP is not necessary, but the api response content type should be always json.
+- Required format of api response:
 ```json
 {
     "Weather": {
