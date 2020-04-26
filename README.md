@@ -1,6 +1,6 @@
 # Agri Wayne
 
-![](https://github.com/PvtSec/Agri_Wayne/raw/master/app/src/main/res/drawable-hdpi/app_icon.png)
+![](https://github.com/PvtSec/Agri_Wayne/raw/master/app/src/main/res/drawable-mdpi/app_icon.png)
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg)
 ![](https://img.shields.io/github/forks/pandao/editor.md.svg)
