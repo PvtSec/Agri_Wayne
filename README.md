@@ -1,4 +1,13 @@
 # Agri Wayne
+
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://img.shields.io/github/stars/pandao/editor.md.svg)
+![](https://img.shields.io/github/forks/pandao/editor.md.svg)
+![](https://img.shields.io/github/tag/pandao/editor.md.svg)
+![](https://img.shields.io/github/release/pandao/editor.md.svg)
+![](https://img.shields.io/github/issues/pandao/editor.md.svg)
+![](https://img.shields.io/bower/v/editor.md.svg)
+
 #### Features
 
 - Realtime Weather Monitoring
@@ -276,12 +285,3 @@ Required format of api response:
 ```
 - When the api response is set correctly, the app can be built for test.
 - On receiving the api response correctly, the app starts showing all required data
-
-
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
-![](https://img.shields.io/github/stars/pandao/editor.md.svg)
-![](https://img.shields.io/github/forks/pandao/editor.md.svg)
-![](https://img.shields.io/github/tag/pandao/editor.md.svg)
-![](https://img.shields.io/github/release/pandao/editor.md.svg)
-![](https://img.shields.io/github/issues/pandao/editor.md.svg)
-![](https://img.shields.io/bower/v/editor.md.svg)
