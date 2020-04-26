@@ -13,7 +13,7 @@ import android.widget.Toast;
 import java.util.Objects;
 import agri.wayne.ServerHandler.ServerCommunication;
 
-public class Splash extends AppCompatActivity
+public class SettingUp extends AppCompatActivity
 {
     ProgressBar splash_spin;
     Button notify;
@@ -46,7 +46,7 @@ public class Splash extends AppCompatActivity
         {
             public void onFinish()
             {
-                startActivity(new Intent(Splash.this, Dashboard.class));
+                startActivity(new Intent(SettingUp.this, Dashboard.class));
                 overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
                 finish();
             }
