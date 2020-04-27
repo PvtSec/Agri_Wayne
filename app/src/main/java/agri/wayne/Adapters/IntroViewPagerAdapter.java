@@ -12,6 +12,8 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.List;
 
+import agri.wayne.R;
+
 public class IntroViewPagerAdapter extends PagerAdapter {
 
    Context mContext ;

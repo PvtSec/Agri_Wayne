@@ -48,9 +48,7 @@ public class IntroActivity extends AppCompatActivity {
         btnAnim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.button_animation);
         tvSkip = findViewById(R.id.tv_skip);
         final List<agri.wayne.ScreenItem> mList = new ArrayList<>();
-        mList.add(new agri.wayne.ScreenItem("Fresh Food","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur  consectetur adipiscing elit",R.drawable.img1));
-        mList.add(new agri.wayne.ScreenItem("Fast Delivery","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur  consectetur adipiscing elit",R.drawable.img2));
-        mList.add(new agri.wayne.ScreenItem("Select Language","Select language of your preference",R.drawable.img3));
+        mList.add(new agri.wayne.ScreenItem("Get Started","Lorem ipst",R.drawable.get_started));
 
         screenPager =findViewById(R.id.screen_viewpager);
         introViewPagerAdapter = new agri.wayne.IntroViewPagerAdapter(this,mList);
