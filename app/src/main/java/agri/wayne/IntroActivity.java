@@ -49,8 +49,8 @@ public class IntroActivity extends AppCompatActivity {
         tvSkip = findViewById(R.id.tv_skip);
         final List<agri.wayne.ScreenItem> mList = new ArrayList<>();
         mList.add(new agri.wayne.ScreenItem("Welcome","We are glad to see you here on Agri Wayne. Swipe right and read through to get a brief idea of how this application support farmers to get most out of their crops.",R.drawable.crop_yield));
-        mList.add(new agri.wayne.ScreenItem("Realtime monitoring","Lorem i",R.drawable.analytics));
-        mList.add(new agri.wayne.ScreenItem("Weather Prediction","Lorem i",R.drawable.farming));
+        mList.add(new agri.wayne.ScreenItem("Realtime monitoring","Realtime Weather Condition at your fingertip. Relevant data to that could help keep your crops stable under weather changes",R.drawable.analytics));
+        mList.add(new agri.wayne.ScreenItem("Weather Prediction","Know about upcoming weather",R.drawable.farming));
         mList.add(new agri.wayne.ScreenItem("Crop Suggestion","Lorem i",R.drawable.paddy));
         mList.add(new agri.wayne.ScreenItem("Crop Advisory","Lorem i",R.drawable.watering));
         mList.add(new agri.wayne.ScreenItem("Get Started","Lorem i",R.drawable.get_started));
