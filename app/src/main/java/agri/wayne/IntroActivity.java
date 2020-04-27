@@ -48,7 +48,12 @@ public class IntroActivity extends AppCompatActivity {
         btnAnim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.button_animation);
         tvSkip = findViewById(R.id.tv_skip);
         final List<agri.wayne.ScreenItem> mList = new ArrayList<>();
-        mList.add(new agri.wayne.ScreenItem("Get Started","Lorem ipst",R.drawable.get_started));
+        mList.add(new agri.wayne.ScreenItem("Welcome","We are glad to see you here on Agri Wayne. Swipe right and read through to get a brief idea of how this application support farmers to get most out of their crops.",R.drawable.crop_yield));
+        mList.add(new agri.wayne.ScreenItem("Realtime monitoring","Lorem i",R.drawable.analytics));
+        mList.add(new agri.wayne.ScreenItem("Weather Prediction","Lorem i",R.drawable.farming));
+        mList.add(new agri.wayne.ScreenItem("Crop Suggestion","Lorem i",R.drawable.paddy));
+        mList.add(new agri.wayne.ScreenItem("Crop Advisory","Lorem i",R.drawable.watering));
+        mList.add(new agri.wayne.ScreenItem("Get Started","Lorem i",R.drawable.get_started));
 
         screenPager =findViewById(R.id.screen_viewpager);
         introViewPagerAdapter = new agri.wayne.IntroViewPagerAdapter(this,mList);
