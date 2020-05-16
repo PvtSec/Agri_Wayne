@@ -34,7 +34,7 @@ public class ServerCommunication extends Fragment
 
     public static void getData(final Context context)
     {
-        String url = "http://13.232.189.95/getData.php";
+        String url = "http://13.235.238.94:3000/weather_data";
         RequestQueue data_q = Volley.newRequestQueue(context);
         StringRequest data_req = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
