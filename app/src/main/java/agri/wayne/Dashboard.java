@@ -2,6 +2,8 @@ package agri.wayne;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
+
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,11 +24,21 @@ public class Dashboard extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         TabLayout tabs = findViewById(R.id.weather_tabs);
-        date = findViewById(R.id.dateNtime);
-        date.setText(ServerCommunication.date);
+        int orientation = getResources().getConfiguration().orientation;
+
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE)
+        {
+            // In landscape
+        }
+        else
+        {
+            date = findViewById(R.id.dateNtime);
+            date.setText(ServerCommunication.date);
+            setListener();
+        }
         tabs.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        setListener();
+
 
         final ViewPager pager = findViewById(R.id.weather_pager);
         final WeatherFragAdapter adapter = new WeatherFragAdapter(getSupportFragmentManager());
