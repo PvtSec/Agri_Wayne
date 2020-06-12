@@ -33,7 +33,7 @@ public class SettingUp extends AppCompatActivity
         if (Objects.requireNonNull(net.getNetworkInfo(ConnectivityManager.TYPE_MOBILE)).getState() == NetworkInfo.State.CONNECTED ||
                 Objects.requireNonNull(net.getNetworkInfo(ConnectivityManager.TYPE_WIFI)).getState() == NetworkInfo.State.CONNECTED) {
             ServerCommunication.getData(this);
-            launchNext(2300);
+            launchNext(3500);
         }
         else
         {
