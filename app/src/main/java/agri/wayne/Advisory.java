@@ -1,7 +1,10 @@
 package agri.wayne;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
 import androidx.viewpager.widget.ViewPager;
+
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -38,7 +41,11 @@ public class Advisory extends AppCompatActivity
         adapter = new CropFragAdapter(getSupportFragmentManager());
 
         add_crop(getIntent().getStringArrayExtra("crops"));
-        setListener();
+        if (getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE)
+        {
+            setListener();
+        }
+
         pager.setAdapter(adapter);
         tabs.setupWithViewPager(pager);
 

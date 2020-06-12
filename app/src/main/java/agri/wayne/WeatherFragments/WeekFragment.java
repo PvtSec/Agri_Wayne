@@ -2,6 +2,7 @@ package agri.wayne.WeatherFragments;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import androidx.core.app.ActivityOptionsCompat;
 import androidx.fragment.app.Fragment;
@@ -128,8 +129,15 @@ public class WeekFragment extends Fragment
                 start_good_advisory.putExtra("crops",good_crop_array);
                 start_good_advisory.putExtra("day","Next Week");
 
-                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
-                startActivity(start_good_advisory, activityOptionsCompat.toBundle());
+                if (getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE)
+                {
+                    ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
+                    startActivity(start_good_advisory, activityOptionsCompat.toBundle());
+                }
+                else
+                {
+                    startActivity(start_good_advisory);
+                }
             }
         });
 
@@ -142,8 +150,15 @@ public class WeekFragment extends Fragment
                 start_normal_advisory.putExtra("crops",normal_crop_array);
                 start_normal_advisory.putExtra("day","Next Week");
 
-                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
-                startActivity(start_normal_advisory, activityOptionsCompat.toBundle());
+                if (getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE)
+                {
+                    ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
+                    startActivity(start_normal_advisory, activityOptionsCompat.toBundle());
+                }
+                else
+                {
+                    startActivity(start_normal_advisory);
+                }
 
             }
         });
@@ -157,8 +172,15 @@ public class WeekFragment extends Fragment
                 start_bad_advisory.putExtra("crops",bad_crop_array);
                 start_bad_advisory.putExtra("day","Next Week");
 
-                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
-                startActivity(start_bad_advisory, activityOptionsCompat.toBundle());
+                if (getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE)
+                {
+                    ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
+                    startActivity(start_bad_advisory, activityOptionsCompat.toBundle());
+                }
+                else
+                {
+                    startActivity(start_bad_advisory);
+                }
             }
         });
     }

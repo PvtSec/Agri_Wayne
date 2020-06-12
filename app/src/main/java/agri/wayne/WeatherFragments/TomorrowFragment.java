@@ -2,6 +2,7 @@ package agri.wayne.WeatherFragments;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import androidx.core.app.ActivityOptionsCompat;
 import androidx.fragment.app.Fragment;
@@ -118,8 +119,6 @@ public class TomorrowFragment extends Fragment
     private void setListeners()
     {
         final ImageView img = getActivity().findViewById(R.id.cloud_image);
-
-
         good.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -128,8 +127,15 @@ public class TomorrowFragment extends Fragment
                 start_good_advisory.putExtra("crops",good_crop_array);
                 start_good_advisory.putExtra("day","Tomorrow");
 
-                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
-                startActivity(start_good_advisory, activityOptionsCompat.toBundle());
+                if (getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE)
+                {
+                    ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
+                    startActivity(start_good_advisory, activityOptionsCompat.toBundle());
+                }
+                else
+                {
+                    startActivity(start_good_advisory);
+                }
             }
         });
 
@@ -142,8 +148,15 @@ public class TomorrowFragment extends Fragment
                 start_normal_advisory.putExtra("crops",normal_crop_array);
                 start_normal_advisory.putExtra("day","Tomorrow");
 
-                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
-                startActivity(start_normal_advisory, activityOptionsCompat.toBundle());
+                if (getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE)
+                {
+                    ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
+                    startActivity(start_normal_advisory, activityOptionsCompat.toBundle());
+                }
+                else
+                {
+                    startActivity(start_normal_advisory);
+                }
 
             }
         });
@@ -157,8 +170,15 @@ public class TomorrowFragment extends Fragment
                 start_bad_advisory.putExtra("crops",bad_crop_array);
                 start_bad_advisory.putExtra("day","Tomorrow");
 
-                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
-                startActivity(start_bad_advisory, activityOptionsCompat.toBundle());
+                if (getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE)
+                {
+                    ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), img, "slide_up_cloud");
+                    startActivity(start_bad_advisory, activityOptionsCompat.toBundle());
+                }
+                else
+                {
+                    startActivity(start_bad_advisory);
+                }
             }
         });
     }
