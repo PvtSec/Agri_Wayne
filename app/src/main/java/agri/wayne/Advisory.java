@@ -14,7 +14,9 @@ import agri.wayne.Adapters.CropFragAdapter;
 import agri.wayne.CropFragments.BananaFragment;
 import agri.wayne.CropFragments.CoffeeFragment;
 import agri.wayne.CropFragments.GingerFragment;
+import agri.wayne.CropFragments.PepperFragment;
 import agri.wayne.CropFragments.RiceFragment;
+import agri.wayne.CropFragments.VegetableFragment;
 import agri.wayne.ServerHandler.ServerCommunication;
 
 public class Advisory extends AppCompatActivity
@@ -93,6 +95,12 @@ public class Advisory extends AppCompatActivity
                     break;
                 case "Rice":
                     adapter.addFragment(new RiceFragment(),"Rice",position);
+                    break;
+                case "Pepper":
+                    adapter.addFragment(new PepperFragment(),"Pepper",position);
+                    break;
+                case "Vegetables":
+                    adapter.addFragment(new VegetableFragment(),"Vegetables",position);
                     break;
 
                 default:
