@@ -17,6 +17,7 @@ import java.util.Map;
 
 public class ServerCommunication extends Fragment
 {
+    public static int server_status;
     public static String date,
             imageToday, imageTomorrow, imageWeek,
             temp_today, temp_tomorrow, temp_week,
@@ -40,6 +41,7 @@ public class ServerCommunication extends Fragment
             @Override
             public void onResponse(String response)
             {
+                server_status = 1;
                 try
                 {
                     JSONObject params = new JSONObject(response).getJSONObject("Weather");
@@ -110,7 +112,8 @@ public class ServerCommunication extends Fragment
             @Override
             public void onErrorResponse(VolleyError error)
             {
-                Toast.makeText(context,error.toString(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(context,error.toString(),Toast.LENGTH_SHORT).show();
+                server_status = 0;
             }
         });
 

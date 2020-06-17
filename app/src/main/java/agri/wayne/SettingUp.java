@@ -46,9 +46,18 @@ public class SettingUp extends AppCompatActivity
         {
             public void onFinish()
             {
-                startActivity(new Intent(SettingUp.this, Dashboard.class));
-                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
-                finish();
+                if(ServerCommunication.server_status==1)
+                {
+                    startActivity(new Intent(SettingUp.this, Dashboard.class));
+                    overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+                    finish();
+                }
+                else
+                {
+                    startActivity(new Intent(SettingUp.this, ServerStatus.class));
+                    overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+                    finish();
+                }
             }
             public void onTick(long timeLeft)
             {

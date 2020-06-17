@@ -33,7 +33,7 @@ tools:context=".SettingUp">
         <ImageView
             android:id="@+id/cloud_image"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="600dp"
             android:scaleType="fitXY"
             android:transitionName="slide_up_cloud"
             android:src="@drawable/cloud_head"/>
@@ -44,6 +44,7 @@ tools:context=".SettingUp">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="?android:attr/progressBarStyle"
+        android:indeterminateTint="#FFF"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -28,4 +28,5 @@
     <string name="watering">Watering</string>
     <string name="fertilizers">Fertilizers</string>
     <string name="pesticides">Pesticides</string>
+    <string name="server_error">Server under Maintenance \n Try again later</string>
 </resources>
