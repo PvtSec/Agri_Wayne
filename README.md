@@ -4,7 +4,7 @@
 
 ![](https://img.shields.io/badge/For%20Android%3F-Yes-green.svg)
 ![](https://img.shields.io/badge/Minimum%20SDK-22-green.svg)
-![](https://img.shields.io/badge/Maintenance%20Status-Active-green.svg)
+![](https://img.shields.io/badge/Maintenance%20Status-inactive-red.svg)
 ![](https://img.shields.io/badge/Version-1.2.0-blue.svg)
 ![](https://img.shields.io/badge/Issues-1-red.svg)
 ![](https://img.shields.io/badge/Closed-1-green.svg)
